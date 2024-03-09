@@ -8,7 +8,7 @@
     "build": "ncc build process.js -o ."
   },
   "dependencies": {
-    "@actions/core": "^1.2.7",
+    "@actions/core": "^1.9.1",
     "@ramumb/strip-tags": "^0.1.3",
     "@vercel/ncc": "^0.28.5",
     "github-slugger": "^1.3.0",
