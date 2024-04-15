@@ -1,4 +1,12 @@
 {
+	"author": {
+		"email": "Land@Playform.Cloud",
+		"name": "Land",
+		"url": "HTTPS://Land.Playform.Cloud"
+	},
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/DocusaurusMeilisearchIndexer/issues"
+	},
 	"dependencies": {
 		"@actions/core": "1.10.1",
 		"@ramumb/strip-tags": "0.1.3",
@@ -9,14 +17,27 @@
 	},
 	"devDependencies": {
 		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6",
 		"covector": "0.10.2"
 	},
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/DocusaurusMeilisearchIndexer#readme",
+	"license": "SEE LICENSE IN LICENSE",
 	"main": "index.js",
 	"name": "docusaurus-meilisearch-indexer",
+	"private": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/DocusaurusMeilisearchIndexer.git"
+	},
 	"scripts": {
 		"Document": "Document 'Source/**/*.ts'",
 		"build": "ncc build process.js -o .",
 		"prepublishOnly": "Build 'Source/**/*.ts'",
 		"run-source": "node index.js"
-	}
+	},
+	"type": "module",
+	"version": "0.0.1"
 }
