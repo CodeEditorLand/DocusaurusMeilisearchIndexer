@@ -95,8 +95,8 @@ function escapeProperty(s) {
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function fulfilled(value) { try { step(generator.next(value)); } catch (_Error) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (_Error) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
@@ -588,8 +588,8 @@ BananaSlug.slug = slugger
     function __awaiter(thisArg, _arguments, P, generator) {
         function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
         return new (P || (P = Promise))(function (resolve, reject) {
-            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+            function fulfilled(value) { try { step(generator.next(value)); } catch (_Error) { reject(e); } }
+            function rejected(value) { try { step(generator["throw"](value)); } catch (_Error) { reject(e); } }
             function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
             step((generator = generator.apply(thisArg, _arguments || [])).next());
         });
@@ -618,7 +618,7 @@ BananaSlug.slug = slugger
                         _.trys.pop(); continue;
                 }
                 op = body.call(thisArg, _);
-            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+            } catch (_Error) { op = [6, e]; y = 0; } finally { f = t = 0; }
             if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
         }
     }
@@ -2914,7 +2914,7 @@ FetchError.prototype.name = 'FetchError';
 let convert;
 try {
 	convert = __nccwpck_require__(877).convert;
-} catch (e) {}
+} catch (_Error) {}
 
 const INTERNALS = Symbol('Body internals');
 
@@ -5015,7 +5015,7 @@ var sanitizeUrl = function(url /* : ?string */) {
         if (prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0 || prot.indexOf('data:') === 0) {
             return null;
         }
-    } catch (e) {
+    } catch (_Error) {
         // decodeURIComponent sometimes throws a URIError
         // See `decodeURIComponent('a%AFc');`
         // http://stackoverflow.com/questions/9064536/javascript-decodeuricomponent-malformed-uri-exception
