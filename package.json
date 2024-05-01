@@ -1,11 +1,31 @@
 {
-	"author": {
-		"email": "Land@PlayForm.Cloud",
-		"name": "🌆 — Land —",
-		"url": "HTTPS://Land.PlayForm.Cloud"
-	},
+	"name": "docusaurus-meilisearch-indexer",
+	"version": "0.0.1",
+	"private": false,
+	"keywords": [
+		"land"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/DocusaurusMeiliSearchIndexer#readme",
 	"bugs": {
 		"url": "HTTPS://GitHub.Com/CodeEditorLand/DocusaurusMeiliSearchIndexer/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/DocusaurusMeiliSearchIndexer.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
+	},
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
+		"build": "ncc build process.js -o .",
+		"prepublishOnly": "Build 'Source/**/*.ts'",
+		"run-source": "node index.js"
 	},
 	"dependencies": {
 		"@actions/core": "^1.2.7",
@@ -20,27 +40,7 @@
 		"@playform/document": "0.0.6",
 		"covector": "^0.3.0"
 	},
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/DocusaurusMeiliSearchIndexer#readme",
-	"keywords": [
-		"land"
-	],
-	"license": "SEE LICENSE IN LICENSE",
-	"main": "index.js",
-	"name": "docusaurus-meilisearch-indexer",
-	"private": false,
 	"publishConfig": {
 		"access": "public"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/DocusaurusMeiliSearchIndexer.git"
-	},
-	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
-		"build": "ncc build process.js -o .",
-		"prepublishOnly": "Build 'Source/**/*.ts'",
-		"run-source": "node index.js"
-	},
-	"type": "module",
-	"version": "0.0.1"
+	}
 }
