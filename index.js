@@ -624,7 +624,7 @@ BananaSlug.slug = slugger
     }
 
     var MeiliSearchError =
-    /** @class */
+    
     function (_super) {
       __extends(MeiliSearchError, _super);
 
@@ -645,7 +645,7 @@ BananaSlug.slug = slugger
     }(Error);
 
     var MeiliSearchTimeOutError =
-    /** @class */
+    
     function (_super) {
       __extends(MeiliSearchTimeOutError, _super);
 
@@ -699,7 +699,7 @@ BananaSlug.slug = slugger
     }
 
     var MeiliSearchCommunicationError =
-    /** @class */
+    
     function (_super) {
       __extends(MeiliSearchCommunicationError, _super);
 
@@ -730,7 +730,7 @@ BananaSlug.slug = slugger
     }(Error);
 
     var MeiliSearchApiError =
-    /** @class */
+    
     function (_super) {
       __extends(class_1, _super);
 
@@ -805,7 +805,7 @@ BananaSlug.slug = slugger
     }
 
     var HttpRequests =
-    /** @class */
+    
     function () {
       function HttpRequests(config) {
         this.headers = __assign(__assign(__assign({}, config.headers || {}), {
@@ -1005,7 +1005,7 @@ BananaSlug.slug = slugger
      */
 
     var Index =
-    /** @class */
+    
     function () {
       function Index(config, uid, primaryKey) {
         this.uid = uid;
@@ -2373,7 +2373,7 @@ BananaSlug.slug = slugger
      */
 
     var MeiliSearch =
-    /** @class */
+    
     function () {
       function MeiliSearch(config) {
         config.host = HttpRequests.addTrailingSlash(config.host);
@@ -4737,8 +4737,8 @@ var parserFor = function(rules /*: ParserRules */, defaultState /*: ?State */) {
     });
 
     ruleList.sort(function(typeA, typeB) {
-        var ruleA /* : ParserRule */ = /** @type {SimpleMarkdown.ParserRule} */ (rules[typeA] /*:: :any */);
-        var ruleB /* : ParserRule */ = /** @type {SimpleMarkdown.ParserRule} */ (rules[typeB] /*:: :any */);
+        var ruleA /* : ParserRule */ = );
+        var ruleB /* : ParserRule */ = );
         var orderA = ruleA.order;
         var orderB = ruleB.order;
 
@@ -4766,11 +4766,11 @@ var parserFor = function(rules /*: ParserRules */, defaultState /*: ?State */) {
         }
     });
 
-    /** @type {SimpleMarkdown.State} */
+    
     var latestState;
-    /** @type {SimpleMarkdown.Parser} */
+    
     var nestedParse = function(source /* : string */, state /* : ?State */) {
-        /** @type Array<SimpleMarkdown.SingleASTNode> */
+        
         var result = [];
         state = state || latestState;
         latestState = state;
@@ -4784,7 +4784,7 @@ var parserFor = function(rules /*: ParserRules */, defaultState /*: ?State */) {
             // loop control variables:
             var i = 0;
             var currRuleType = ruleList[0];
-            var currRule /* : ParserRule */ = /** @type {SimpleMarkdown.ParserRule} */ ( rules[currRuleType] /*:: :any */ );
+            var currRule /* : ParserRule */ =  );
 
             do {
                 var currOrder = currRule.order;
@@ -4812,7 +4812,7 @@ var parserFor = function(rules /*: ParserRules */, defaultState /*: ?State */) {
                 // Note that this makes `currRule` be the next item
                 i++;
                 currRuleType = ruleList[i];
-                currRule = /*::((*/ /** @type {SimpleMarkdown.ParserRule} */ (rules[currRuleType]) /*:: : any) : ParserRule)*/;
+                currRule = /*::((*/ ;
 
             } while (
                 // keep looping while we're still within the ruleList
@@ -4866,7 +4866,7 @@ var parserFor = function(rules /*: ParserRules */, defaultState /*: ?State */) {
                 if (parsed.type == null) {
                     parsed.type = ruleType;
                 }
-                result.push(/** @type {SimpleMarkdown.SingleASTNode} */ (parsed));
+                result.push( (parsed));
             }
 
             state.prevCapture = capture;
@@ -4875,7 +4875,7 @@ var parserFor = function(rules /*: ParserRules */, defaultState /*: ?State */) {
         return result;
     };
 
-    /** @type {SimpleMarkdown.Parser} */
+    
     var outerParse = function(source /* : string */, state /* : ?State */) {
         latestState = populateInitialState(state, defaultState);
         if (!latestState.inline && !latestState.disableAutoBlockNewlines) {
@@ -4893,9 +4893,9 @@ var parserFor = function(rules /*: ParserRules */, defaultState /*: ?State */) {
 };
 
 // Creates a match function for an inline scoped element from a regex
-/** @type {(regex: RegExp) => SimpleMarkdown.MatchFunction} */
+
 var inlineRegex = function(regex /* : RegExp */) {
-    /** @type {SimpleMarkdown.MatchFunction} */
+    
     var match /* : MatchFunction */ = function(source, state) {
         if (state.inline) {
             return regex.exec(source);
@@ -4908,9 +4908,9 @@ var inlineRegex = function(regex /* : RegExp */) {
 };
 
 // Creates a match function for a block scoped element from a regex
-/** @type {(regex: RegExp) => SimpleMarkdown.MatchFunction} */
+
 var blockRegex = function(regex /* : RegExp */) {
-    /** @type {SimpleMarkdown.MatchFunction} */
+    
     var match /* : MatchFunction */ = function(source, state) {
         if (state.inline) {
             return null;
@@ -4923,9 +4923,9 @@ var blockRegex = function(regex /* : RegExp */) {
 };
 
 // Creates a match function from a regex, ignoring block/inline scope
-/** @type {(regex: RegExp) => SimpleMarkdown.MatchFunction} */
+
 var anyScopeRegex = function(regex /* : RegExp */) {
-    /** @type {SimpleMarkdown.MatchFunction} */
+    
     var match /* : MatchFunction */ = function(source, state) {
         return regex.exec(source);
     };
@@ -4949,7 +4949,7 @@ var reactElement = function(
     key /* : string | number | null | void */,
     props /* : { [string]: any } */
 ) /* : ReactElement */ {
-    var element /* : ReactElement */ = /** @type {SimpleMarkdown.ReactElement} */ ({
+    var element /* : ReactElement */ =  ({
         $$typeof: TYPE_SYMBOL,
         type: type,
         key: key == null ? undefined : key,
@@ -5025,7 +5025,7 @@ var sanitizeUrl = function(url /* : ?string */) {
 };
 
 var SANITIZE_TEXT_R = /[<>&"']/g;
-/** @type {any} */
+
 var SANITIZE_TEXT_CODES = {
     '<': '&lt;',
     '>': '&gt;',
@@ -5190,7 +5190,7 @@ var TABLES = (function() {
         var tableRow = parse(source.trim(), state);
         state.inTable = prevInTable;
 
-        /** @type {SimpleMarkdown.SingleASTNode[][]} */
+        
         var cells = [[]];
         tableRow.forEach(function(node, i) {
             if (node.type === 'tableSeparator') {
@@ -5233,7 +5233,7 @@ var TABLES = (function() {
      * @returns {SimpleMarkdown.SingleNodeParseFunction}
      */
     var parseTable = function(trimEndSeparators) {
-        /** @type {SimpleMarkdown.SingleNodeParseFunction} */
+        
         return function(capture, parse, state) {
             state.inline = true;
             var header = parseTableRow(capture[1], parse, state, trimEndSeparators);
@@ -5301,7 +5301,7 @@ var parseRef = function(capture, state, refNode /* : RefNode */) {
 };
 
 var currOrder = 0;
-/** @type {SimpleMarkdown.DefaultRules} */
+
 var defaultRules /* : DefaultRules */ = {
     Array: {
         react: function(arr, output, state) {
@@ -5511,7 +5511,7 @@ var defaultRules /* : DefaultRules */ = {
             var bullet = capture[2];
             var ordered = bullet.length > 1;
             var start = ordered ? +bullet : undefined;
-            var items = /** @type {string[]} */ (
+            var items =  (
                 capture[0]
                     .replace(LIST_BLOCK_END_R, "\n")
                     .match(LIST_ITEM_R)
@@ -5522,7 +5522,7 @@ var defaultRules /* : DefaultRules */ = {
             /*:: items = ((items : any) : Array<string>) */
 
             var lastItemWasAParagraph = false;
-            var itemContent = items.map(function(/** @type {string} */ item, /** @type {number} */ i) {
+            var itemContent = items.map(function( i) {
                 // We need to see how far indented this item is:
                 var prefixCapture = LIST_ITEM_PREFIX_R.exec(item);
                 var space = prefixCapture ? prefixCapture[0].length : 0;
@@ -5601,8 +5601,8 @@ var defaultRules /* : DefaultRules */ = {
                 {
                     start: node.start,
                     children: node.items.map(function(
-                        /** @type {SimpleMarkdown.ASTNode} */ item,
-                        /** @type {number} */ i
+                         item,
+                         i
                     ) {
                         return reactElement(
                             'li',
@@ -5616,7 +5616,7 @@ var defaultRules /* : DefaultRules */ = {
             );
         },
         html: function(node, output, state) {
-            var listItems = node.items.map(function(/** @type {SimpleMarkdown.ASTNode} */ item) {
+            var listItems = node.items.map(function( item) {
                 return htmlTag("li", output(item, state));
             }).join("");
 
@@ -5651,7 +5651,7 @@ var defaultRules /* : DefaultRules */ = {
             // Sorry :(.
             if (state._refs && state._refs[def]) {
                 // `refNode` can be a link or an image
-                state._refs[def].forEach(function(/** @type {SimpleMarkdown.RefNode} */ refNode) {
+                state._refs[def].forEach(function( refNode) {
                     refNode.target = target;
                     refNode.title = title;
                 });
@@ -5695,8 +5695,8 @@ var defaultRules /* : DefaultRules */ = {
             };
 
             var headers = node.header.map(function(
-                /** @type {SimpleMarkdown.ASTNode} */ content,
-                /** @type {number} */ i
+                 content,
+                 i
             ) {
                 return reactElement(
                     'th',
@@ -5710,16 +5710,16 @@ var defaultRules /* : DefaultRules */ = {
             });
 
             var rows = node.cells.map(function(
-                    /** @type {SimpleMarkdown.ASTNode[]} */ row,
-                    /** @type {number} */ r
+                     row,
+                     r
             ) {
                 return reactElement(
                     'tr',
                     '' + r,
                     {
                         children: row.map(function(
-                            /** @type {SimpleMarkdown.ASTNode} */ content,
-                            /** @type {number} */ c
+                             content,
+                             c
                         ) {
                             return reactElement(
                                 'td',
@@ -5771,17 +5771,17 @@ var defaultRules /* : DefaultRules */ = {
             };
 
             var headers = node.header.map(function(
-                /** @type {SimpleMarkdown.ASTNode} */ content,
-                /** @type {number} */ i
+                 content,
+                 i
             ) {
                 return htmlTag("th", output(content, state),
                     { style: getStyle(i), scope: "col" });
             }).join("");
 
-            var rows = node.cells.map(function(/** @type {SimpleMarkdown.ASTNode[]} */ row) {
+            var rows = node.cells.map(function( row) {
                 var cols = row.map(function(
-                    /** @type {SimpleMarkdown.ASTNode} */ content,
-                    /** @type {number} */ c
+                     content,
+                     c
                 ) {
                     return htmlTag("td", output(content, state),
                         { style: getStyle(c) });
@@ -6198,7 +6198,7 @@ var ruleOutput = function/* :: <Rule : Object> */(
         );
     }
 
-    /** @type {SimpleMarkdown.NodeOutput<any>} */
+    
     var nestedRuleOutput /* : NodeOutput<any> */ = function(
         ast /* : SingleASTNode */,
         outputFunc /* : Output<any> */,
@@ -6214,7 +6214,7 @@ var ruleOutput = function/* :: <Rule : Object> */(
  * @returns {any}
  */
 var reactFor = function(outputFunc /* : ReactNodeOutput */) /* : ReactOutput */ {
-    /** @type {SimpleMarkdown.ReactOutput} */
+    
     var nestedOutput /* : ReactOutput */ = function(ast, state) {
         state = state || {};
         if (Array.isArray(ast)) {
@@ -6250,7 +6250,7 @@ var reactFor = function(outputFunc /* : ReactNodeOutput */) /* : ReactOutput */ 
  * @returns {any}
  */
 var htmlFor = function(outputFunc /* : HtmlNodeOutput */) /* : HtmlOutput */ {
-    /** @type {SimpleMarkdown.HtmlOutput} */
+    
     var nestedOutput /* : HtmlOutput */ = function(ast, state) {
         state = state || {};
         if (Array.isArray(ast)) {
@@ -6280,9 +6280,9 @@ var outputFor = function/* :: <Rule : Object> */(
         );
     }
 
-    /** @type {SimpleMarkdown.State} */
+    
     var latestState;
-    /** @type {SimpleMarkdown.ArrayRule} */
+    
     var arrayRule = rules.Array || defaultRules.Array;
 
     // Tricks to convince tsc that this var is not null:
@@ -6295,7 +6295,7 @@ var outputFor = function/* :: <Rule : Object> */(
     }
     var arrayRuleOutput = arrayRuleCheck;
 
-    /** @type {SimpleMarkdown.Output<any>} */
+    
     var nestedOutput /* : Output<any> */ = function(ast, state) {
         state = state || latestState;
         latestState = state;
@@ -6306,7 +6306,7 @@ var outputFor = function/* :: <Rule : Object> */(
         }
     };
 
-    /** @type {SimpleMarkdown.Output<any>} */
+    
     var outerOutput = function(ast, state) {
         latestState = populateInitialState(state, defaultState);
         return nestedOutput(ast, latestState);
@@ -6347,9 +6347,9 @@ var defaultImplicitParse = function(source, state) {
     return defaultRawParse(source, state);
 };
 
-/** @type {SimpleMarkdown.ReactOutput} */
+
 var defaultReactOutput /* : ReactOutput */ = outputFor(defaultRules, "react");
-/** @type {SimpleMarkdown.HtmlOutput} */
+
 var defaultHtmlOutput /* : HtmlOutput */ = outputFor(defaultRules, "html");
 
 /**
@@ -6374,7 +6374,7 @@ var markdownToHtml = function(source, state) /* : string */ {
  * @returns {SimpleMarkdown.ReactElement}
  */
 var ReactMarkdown = function(props) {
-    /** @type {Object} */
+    
     var divProps = {};
 
     for (var prop in props) {
@@ -6505,13 +6505,13 @@ var SimpleMarkdown /* : Exports */ = {
         if (typeof console !== 'undefined') {
             console.warn('defaultParse is deprecated, please use `defaultImplicitParse`');
         }
-        return defaultImplicitParse.apply(null, /** @type {any} */ (arguments));
+        return defaultImplicitParse.apply(null,  (arguments));
     },
     defaultOutput: function() {
         if (typeof console !== 'undefined') {
             console.warn('defaultOutput is deprecated, please use `defaultReactOutput`');
         }
-        return defaultReactOutput.apply(null, /** @type {any} */ (arguments));
+        return defaultReactOutput.apply(null,  (arguments));
     }
 };
 
