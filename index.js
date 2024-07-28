@@ -994,11 +994,7 @@
 						return __generator(this, function (_a) {
 							switch (_a.label) {
 								case 0:
-									if (!!response.ok)
-										return [
-											3, /*break*/
-											5,
-										];
+									if (!!response.ok) return [3 /*break*/, 5];
 									err = void 0;
 									_a.label = 1;
 
@@ -1013,10 +1009,7 @@
 
 								case 2:
 									err = _a.sent();
-									return [
-										3, /*break*/
-										4,
-									];
+									return [3 /*break*/, 4];
 
 								case 3:
 									_a.sent();
@@ -1171,18 +1164,12 @@
 												];
 											}
 
-											return [
-												3, /*break*/
-												4,
-											];
+											return [3 /*break*/, 4];
 
 										case 3:
 											e_1 = _b.sent();
 											httpErrorHandler(e_1);
-											return [
-												3, /*break*/
-												4,
-											];
+											return [3 /*break*/, 4];
 
 										case 4:
 											return [
@@ -1414,10 +1401,7 @@
 													timeOutMs
 												)
 											)
-												return [
-													3, /*break*/
-													4,
-												];
+												return [3 /*break*/, 4];
 											return [
 												4,
 												/*yield*/
@@ -1441,10 +1425,7 @@
 										case 3:
 											_e.sent();
 
-											return [
-												3, /*break*/
-												1,
-											];
+											return [3 /*break*/, 1];
 
 										case 4:
 											throw new MeiliSearchTimeOutError(
@@ -1577,10 +1558,7 @@
 													"POST"
 												)
 											)
-												return [
-													3, /*break*/
-													2,
-												];
+												return [3 /*break*/, 2];
 											return [
 												4,
 												/*yield*/
@@ -1608,10 +1586,7 @@
 													"GET"
 												)
 											)
-												return [
-													3, /*break*/
-													4,
-												];
+												return [3 /*break*/, 4];
 											getParams = __assign(
 												__assign({}, params),
 												{
