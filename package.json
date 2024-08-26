@@ -5,7 +5,7 @@
 		"@vercel/ncc": "0.38.1",
 		"github-slugger": "2.0.0",
 		"meilisearch": "0.41.0",
-		"simple-markdown": "1.0.0-alpha.0"
+		"simple-markdown": "0.7.3"
 	},
 	"devDependencies": {
 		"covector": "0.12.3"
