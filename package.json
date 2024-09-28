@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 <<<<<<< HEAD
-		"covector": "^0.3.0"
+		"covector": "0.3.0"
 =======
 		"covector": "0.12.3"
 	},
