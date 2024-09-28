@@ -6,14 +6,24 @@
 		"run-source": "node index.js"
 	},
 	"dependencies": {
-		"@actions/core": "^1.2.7",
-		"@ramumb/strip-tags": "^0.1.3",
-		"@vercel/ncc": "^0.28.5",
-		"github-slugger": "^1.3.0",
-		"meilisearch": "^0.18.1",
-		"simple-markdown": "^0.7.3"
+		"@actions/core": "1.10.1",
+		"@ramumb/strip-tags": "0.1.3",
+		"@vercel/ncc": "0.38.2",
+		"github-slugger": "2.0.0",
+		"meilisearch": "0.42.0",
+		"simple-markdown": "0.7.3"
 	},
 	"devDependencies": {
+<<<<<<< HEAD
 		"covector": "^0.3.0"
+=======
+		"covector": "0.12.3"
+	},
+	"main": "index.js",
+	"name": "docusaurus-meilisearch-indexer",
+	"scripts": {
+		"build": "ncc build process.js -o .",
+		"run-source": "node index.js"
+>>>>>>> 43fbee4e0cc37b7d138ff396ef57bb175de1431d
 	}
 }
